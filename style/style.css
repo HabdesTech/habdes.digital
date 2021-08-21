@@ -390,7 +390,7 @@ header>ul>li>a:hover {
     overflow: hidden;
 }
 .temas_section_texto{
-    border: 1px solid red;
+
 }
 .temas_section_texto > h1{
     color: white;
@@ -409,7 +409,7 @@ header>ul>li>a:hover {
 }
 
 .temas_section_img > img {
-    border: 1px solid black;
+
     margin: 22% 0 0 10%;
 }
 .temas_section_cards_container{
