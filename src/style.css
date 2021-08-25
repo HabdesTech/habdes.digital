@@ -461,7 +461,7 @@ header>ul>li>a:hover {
 footer {
     width: 100%;
     height: 10%;
-    background: black;
+    background: var(--color-secundario06);
     /*Sirve para darle el estilo al banner*/
     z-index: initial;
 }
@@ -684,9 +684,9 @@ footer {
 
 
 @media(max-width: 768px){
-        .logo_principal>img {
-        width: 100%;
-        height: 100%;
+    .logo_mobile>img {
+        max-width: 72px;
+        max-height: 72px;
     }
     /*MQ PRECIOS*/
     .precios_section{
