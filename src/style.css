@@ -161,7 +161,7 @@
     border: 2px solid var(--color-alterno);
     border-radius: 15px;
     background: var(--color-principal);
-    color: white;
+    color: var(--color-alterno);
     width: 250px;
     height: 100%;
     overflow: auto;
@@ -409,13 +409,13 @@ header>ul>li>a:hover {
 }
 
 .temas_section_texto>h1 {
-    color: white;
+    color: var(--color-alterno);
     text-align: center;
     font-weight: 300;
 }
 
 .temas_section_texto>p {
-    color: white;
+    color: var(--color-alterno);
     text-align: center;
     font-weight: 100;
     font-size: 25px;
@@ -437,7 +437,7 @@ header>ul>li>a:hover {
 }
 
 .temas_Section_buttons {
-    color: white;
+    color: var(--color-alterno);
     font-weight: normal;
     text-align: center;
     margin: 5% 0;
