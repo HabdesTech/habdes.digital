@@ -657,7 +657,7 @@ footer {
     }
     .navbar_section_menu{
         width: 70%;
-        padding: 0;
+        margin: auto;
     }
     .navbar_section_menu_mobile {
         visibility: visible;
