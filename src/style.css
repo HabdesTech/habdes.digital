@@ -763,6 +763,9 @@ footer {
     .banner_section_content {
         top: 20%;
     }
+    .navbar_section_menu{
+        width: 70%;
+    }
 }
 
 /* MQ PARA IPHONE 5/SE */
