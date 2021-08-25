@@ -748,9 +748,13 @@ footer {
     }
 }
 /* MQ PARA IPHONE X */
-@media(max-width: 375px){
+@media(max-width: 375px) {
     .banner_section_content {
         top: 20%;
+    }
+    .navbar_section_menu{
+        border: 5px solid red;
+        margin: 0 5% 0 0;
     }
 }
 /* MQ PARA IPHONE 5/SE */
