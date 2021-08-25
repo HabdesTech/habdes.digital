@@ -684,6 +684,11 @@ footer {
 
 
 @media(max-width: 768px){
+        .logo_principal>img {
+        width: 100%;
+        height: 100%;
+    }
+    /*MQ PRECIOS*/
     .precios_section{
         margin: 5%;
     }
