@@ -113,6 +113,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .card_style_price_header {
@@ -121,6 +122,10 @@
     text-align: center;
     padding: 10% 0 0 0;
     color: var(--color-secundario06);
+    overflow: auto;
+}
+.card_style_price_header > h1 {
+    font-size: 40px;
 }
 
 .card_style_price_content {
@@ -139,6 +144,7 @@
     width: 400px;
     height: 600px;
     margin: 0% 1%;
+    overflow: hidden;
 }
 
 .card_style_price_principal {
@@ -148,6 +154,7 @@
     width: 450px;
     height: 650px;
     margin: 0% 1%;
+    overflow: hidden;
 }
 
 .card_style_02 {
@@ -162,7 +169,8 @@
     margin: 1% 3%;
     text-align: center;
 }
-.card_style_02 > img{
+
+.card_style_02>img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
@@ -170,287 +178,138 @@
     margin: 5% 0;
     padding: 0 7%;
 }
-.card_style_02 > h3{
+
+.card_style_02>h3 {
     font-size: 20px;
 }
-
-/*-------------------------NAVBAR-------------------------*/
-
-.logo_principal>img {
-    width: 150px;
-    height: 100%;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    transition: 0.6s;
-    z-index: 1000;
-}
-
-header>ul {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-header>ul>li {
-    list-style: none;
-}
-
-header>ul>li>a {
-    color: var(--color-alterno);
-    height: 100%;
-    position: relative;
-    display: block;
-    padding: 27.52px 20px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-header>ul>li>a:hover {
-    background: var(--color-alterno);
-    color: var(--color-principal);
-    height: 100%;
-    border-radius: 5px;
-    opacity: .90;
-}
-
-.navbar_section_menu {
-    width: 70%;
-    /*Asignar el % en el navbar*/
-    justify-content: center;
-    /*Sirve para colocar ele menú en el centro del espacio asignado*/
-}
-
-.navbar_section_btn {
-    width: 30%;
-    /*Asignar el % en el navbar*/
-    /*Sirve para colocar los botones al inicio de la sección_btn*/
-}
-
-.navbar_section_btn>button {
-    margin: 5% 10px;
-    /*Sirve para crear un espacio entre los botones*/
-}
-
-.toggle, .logo_mobile {
-    display: none;
-}
-
-.navbar_section_menu_mobile {
-    display: none;
-}
-
-/*-------------------------CIERRE_NAVBAR-------------------------*/
-
-/*-------------------------BANNER-------------------------*/
-
-.banner_principal {
-    width: 100%;
-    height: 100vh;
-    background: radial-gradient(134.3% 141.98% at 100.66% 95.65%, #C5E6FF 0%, #1877F2 65.1%, #1877F2 100%);
-    /*Sirve para darle el estilo al banner*/
-    z-index: initial;
-    margin: auto;
-}
-
-.banner_section {
-    z-index: 1;
-}
-
-.banner_section_content {
-    position: absolute;
-    top: 23%;
-    left: 10%;
-    right: 10%;
-    z-index: 1;
-}
-
-.banner_section_content_text {
-    z-index: 1;
-    color: var(--color-alterno);
-}
-
-.banner_section_content_text:first-child {
-    text-align: center;
-    padding: 15% 0;
-}
-
-.banner_section_content_img {
-    padding: 5% 0;
-    z-index: 1;
-}
-
-.banner_content_img {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    padding-bottom: 5%;
-}
-
-/*-------------------------CIERRE_BANNER-------------------------*/
-
-/*-------------------------SECTION_01-------------------------*/
-
-.ofrecemos_section {
-    margin: 5% 15%;
-}
-
-.ofrecemos_section>h1 {
-    text-align: center;
-    padding: 3% 0;
-}
-
-.ofrecemos_section_img>img {
-    width: 100%;
-}
-
-.ofrecemos_section_texto {
-    padding: 5% 0;
-}
-
-.ofrecemos_section_texto>ul {
-    list-style: none;
-    margin-left: -5%;
-}
-
-/*-------------------------CIERRE_SECTION_01-------------------------*/
-
-/*-------------------------SECTION_02-------------------------*/
-
-.como_funciona_section {
-    margin: 5% 15%;
-}
-
-.como_funciona_section_texto {
-    padding: 20% 0 0 0;
-}
-
-/*-------------------------CIERRE_SECTION_02-------------------------*/
-
-/*-------------------------SECTION_03-------------------------*/
-
-.precios_section {
-    margin: 5% 15%;
-}
-
-.precios_section>h1 {
-    text-align: center;
-    padding: 3% 0;
-}
-
-.card_style_price_content_price {
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-}
-
-.card_style_price_content_price>h1 {
-    font-size: 80px;
-    font-weight: bold;
-    color: var(--color-principal)
-}
-
-.card_style_price_content_price>p {
-    color: var(--color-principal);
-    opacity: 70%;
-    font-size: 25px;
-}
-
-.card_style_price_content_characteristic {
-    margin: 5% 0;
-}
-
-.card_style_price_content_characteristic>ul>li {
-    list-style: none;
-    margin-left: 5%;
-    font-size: 20px;
-}
-
-.card_style_price_content_button {
-    text-align: center;
-    padding: 8% 5% 5% 5%;
-}
-
-/*-------------------------CIERRE_SECTION_03-------------------------*/
-
-/*-------------------------SECTION_04-------------------------*/
-
-.temas_section {
-    background: radial-gradient(134.3% 141.98% at 100.66% 95.65%, #C5E6FF 0%, #1877F2 65.1%, #1877F2 100%);
-    padding: 5% 0;
-    overflow: hidden;
-}
-.temas_section_texto{
-    border: 1px solid red;
-}
-.temas_section_texto > h1{
-    color: white;
-    text-align: center;
-    font-weight: 300;
-}
-.temas_section_texto > p{
-    color: white;
-    text-align: center;
-    font-weight: 100;
-    font-size: 25px;
-}
-.temas_section_img {
-    width: 100%;
-    height: 100%;
-}
-
-.temas_section_img > img {
-    border: 1px solid black;
-    margin: 22% 0 0 10%;
-}
-.temas_section_cards_container{
-    display: flex;
-    justify-content: center;
-    margin: 1% 0 0 0;
-}
-.temas_Section_buttons {
-    color: white;
-    font-weight: normal;
-    text-align: center;
-    margin: 5% 0;
-}
-
-/*-------------------------CIERRE_SECTION_04-------------------------*/
-
-/*-------------------------SECTION_05-------------------------*/
-
-.preguntas_frecuentes_section {
-    margin: 5% 15%;
-}
-
-.preguntas_frecuentes_section>h1 {
-    text-align: center;
-    padding: 5% 0;
-}
-
-/*-------------------------CIERRE_SECTION_05-------------------------*/
-
 /*-------------------------FOOTER-------------------------*/
-
-.footer_section {
+footer {
     width: 100%;
-    height: 200px;
+    height: 10%;
     background: var(--color-secundario06);
     /*Sirve para darle el estilo al banner*/
     z-index: initial;
 }
 
+.footer_divider {
+    background: var(--color-alterno);
+    content: "-";
+    margin: 3% 0 2% 0;
+}
+
+.footer_section {
+    padding: 3% 10% 1rem;
+    border: 2px solid yellow;
+}
+
+.footer_section_01 {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    color: var(--color-alterno);
+    border: 2px solid red;
+}
+
+.footer_section_logo{
+    border: 1px solid white;
+    width: 40%;
+}     
+.footer_section_links{
+    border: 1px solid white;
+    width: 20%;
+}
+.footer_section_links > ul{
+    list-style: none;
+    padding: 0;
+}
+.footer_section_02 {
+    height: 30%;
+    border: 2px solid red;
+}
+
+.footer_section_02_links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_section_02_links_sitemap {
+    width: 70%;
+    border: 1px solid white;
+    padding: 0;
+}
+.footer_section_02_links_sitemap > ul{
+    padding: 0;
+}
+.footer_section_02_links_sitemap > ul > li > a{
+    text-decoration: none;
+}
+
+.footer_section_02_links_sitemap li+li:before {
+    padding: 8px;
+    color: var(--color-alterno);
+    content: "/\00a0";
+}
+
+.footer_section_02_links_sitemap>ul>li {
+    list-style: none;
+    display: inline;
+}
+
+.footer_section_02_links_sitemap>ul>li>a {
+    text-decoration: none;
+    color: var(--color-alterno);
+}
+
+.footer_section_02_links_redes_sociales {
+    width: 30%;
+    border: 1px solid white;
+    text-align: end;
+}
+
+.footer_section_02_links_redes_sociales>a {
+    padding-right: 5%;
+}
+
+.footer_section_02_copyright {
+    color: var(--color-alterno);
+    text-align: center;
+}
+
 /*-------------------------CIERRE_FOOTER-------------------------*/
 
+@media(max-width: 2560px){
+
+}
+@media(max-width: 1440px){
+    .precios_section{
+        margin: 5% 10%;
+    }
+    .card_style_price_content_price>h1 {
+        font-size: 50px;
+    }
+    .card_style_price_alterno {
+        width: 100%;
+        height: 100%;
+        margin: 0% 1%;
+    }
+    
+    .card_style_price_principal {
+        width: 100%;
+        height: 100%;
+        margin: 0% 1%;
+    }
+    
+}
+@media(max-width: 1024px){
+    .precios_section{
+        margin: 5% 0;
+    }
+    /*MQ FOOTER*/
+    .footer_section {
+        padding: 3% 5% 1rem;
+        border: 2px solid yellow;
+    }
+}
 @media (max-width: 993px) {
     .toggle {
         display: block;
@@ -552,30 +411,87 @@ header>ul>li>a:hover {
         width: 100%;
         margin: 5% 0;
     }
+
 }
 
-/* MQ PARA IPHONE 5/SE */
 
-@media (min-width: 320px) {
-    .banner_section_content {
-        top: 15%;
+@media(max-width: 768px){
+    .precios_section{
+        margin: 5%;
+    }
+
+    .card_container_price{
+        display: flex;
+
+        flex-direction: column;
+    }
+    
+    .card_style_price_principal {
+        margin: 5% ;
+    }
+    /*MQ FOOTER*/
+    .footer_section_01{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_section_logo{
+        width: 100%;
+        text-align: center;
+    }     
+    .footer_section_links{
+        width: 100%;
+        text-align: center;
+    }
+    .footer_section_links > ul{
+        border: 1px solid white;
+        padding: 5%;
+        text-decoration: none;
+    }
+    .footer_section_links > ul > li > a{ 
+        text-decoration: none;
+        color: red;
+    }
+
+    .footer_section_02_links{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_section_02_links_sitemap{
+        text-align: center;
+        width: 100%;
+    }
+    .footer_section_02_links_redes_sociales{
+        width: 100%;
+        text-align: center;
+        margin: 1% 0;
     }
 }
-
-/* MQ PARA IPHONE X */
-
-@media (min-width: 375px) {
-    .banner_section_content {
-        top: 20%;
-    }
-}
-
-/* MQ PARA IPHONE X */
-
 @media (min-width: 540px) {
     .banner_section_content {
         top: 15%;
     }
 }
 
-/* MQ PARA IPAD Y IPAD PRO */
+@media(max-width: 425px){
+    .footer_section_02_links_sitemap{
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+    .footer_section_02_links_redes_sociales{
+        margin: 4% 0;
+    }
+}
+/* MQ PARA IPHONE X */
+@media(max-width: 375px){
+    .banner_section_content {
+        top: 20%;
+    }
+}
+/* MQ PARA IPHONE 5/SE */
+
+@media(max-width: 320px){
+    .banner_section_content {
+        top: 15%;
+    }
+}

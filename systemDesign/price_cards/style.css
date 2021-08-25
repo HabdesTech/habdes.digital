@@ -1,0 +1,265 @@
+:root {
+    --color-principal: #057AF0;
+    --color-alterno: #FFFFFF;
+    --color-secundario01: #0365F4;
+    --color-secundario02: #4B9CF9;
+    --color-secundario03: #CBE5F6;
+    --color-secundario04: #EEF6FC;
+    --color-secundario05: #F7FBFF;
+    --color-secundario06: #292E1E;
+    --color-success: #3CA80B;
+    --color-warning: #FFE81C;
+    --color-danger: #E23146;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.background {
+    border: 5px solid black;
+}
+
+/*-------------------------COMPONENTES-------------------------*/
+
+.btn_principal {
+    color: var(--color-alterno);
+    background: var(--color-principal);
+    border: 2px solid var(--color-alterno);
+    padding: 8px 0;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn_principal_alterno {
+    color: var(--color-principal);
+    background: var(--color-alterno);
+    border: 2px solid var(--color-principal);
+    padding: 8px 0;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn_secundario {
+    color: var(--color-principal);
+    background: var(--color-alterno);
+    border: none;
+    padding: 8px 0;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn_secundario_alterno {
+    color: var(--color-alterno);
+    background: var(--color-principal);
+    border: 2px solid var(--color-alterno);
+    padding: 8px 0;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn_card_precios {
+    color: var(--color-alterno);
+    background: var(--color-principal);
+    border: 2px solid var(--color-principal);
+    padding: 8px 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn_card_precios_alterno {
+    color: var(--color-principal);
+    background: var(--color-alterno);
+    border: 2px solid var(--color-principal);
+    padding: 8px 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+.card_container_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+
+}
+
+.card_style_price_header {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 10% 0 0 0;
+    color: var(--color-secundario06);
+    border: 2px solid orange;
+    overflow: auto;
+}
+.card_style_price_header > h1 {
+    font-size: 40px;
+}
+
+.card_style_price_content {
+    width: 100%;
+    height: 80%;
+    padding: 5% 0 0 0;
+    background: var(--color-alterno);
+    border-radius: 0 0 15px 15px;
+    color: var(--color-secundario06);
+}
+
+.card_style_price_alterno {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background: #F7FBFF;
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    margin: 0% 1%;
+    border: 5px solid purple;
+    overflow: hidden;
+}
+
+.card_style_price_principal {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background: linear-gradient(180deg, #057AF0 0%, rgba(24, 139, 255, 0) 100%);
+    border-radius: 15px;
+    width: 450px;
+    height: 650px;
+    margin: 0% 1%;
+    border: 2px solid purple;
+    overflow: hidden;
+}
+
+
+
+/*-------------------------SECTION_03-------------------------*/
+
+.precios_section {
+    margin: 5% 15%;
+    border: 3px solid blue;
+}
+
+.precios_section>h1 {
+    text-align: center;
+    padding: 3% 0;
+}
+
+.card_style_price_content_price {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid orange;
+    overflow: auto;
+}
+
+.card_style_price_content_price>h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: var(--color-principal)
+}
+
+.card_style_price_content_price>p {
+    color: var(--color-principal);
+    opacity: 70%;
+    font-size: 25px;
+}
+
+.card_style_price_content_characteristic {
+    margin: 5% 0;
+    border: 2px solid orange;
+    overflow: hidden;
+}
+.card_style_price_content_characteristic>ul>li {
+    list-style: none;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.card_style_price_content_button {
+    text-align: center;
+    margin: 12% 5% 5%;
+    border: 2px solid orange;
+    overflow: auto;
+}
+
+.card_style_price_content_button_alterno {
+    text-align: center;
+    margin: 8% 5% 5%;
+    border: 2px solid orange;
+    overflow: auto;
+}
+
+
+
+/*-------------------------CIERRE_FOOTER-------------------------*/
+@media(max-width: 2560px){
+
+}
+@media(max-width: 1440px){
+    .precios_section{
+        margin: 5% 10%;
+    }
+    .card_style_price_content_price>h1 {
+        font-size: 50px;
+    }
+    .card_style_price_alterno {
+        width: 100%;
+        height: 100%;
+        margin: 0% 1%;
+    }
+    
+    .card_style_price_principal {
+        width: 100%;
+        height: 100%;
+        margin: 0% 1%;
+    }
+    
+}
+@media(max-width: 1024px){
+    .precios_section{
+        margin: 5% 0;
+    }
+}
+@media(max-width: 768px){
+    .precios_section{
+        margin: 5%;
+    }
+
+    .card_container_price{
+        display: flex;
+
+        flex-direction: column;
+    }
+    
+    .card_style_price_principal {
+        margin: 5% ;
+    }
+}
+@media(max-width: 425px){
+    
+}
+/* MQ PARA IPHONE X */
+@media(max-width: 375px){
+    
+}
+/* MQ PARA IPHONE 5/SE */
+
+@media(max-width: 320px){
+    
+}
+
