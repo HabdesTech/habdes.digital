@@ -579,10 +579,8 @@ footer {
     }
 }
 
-
-
-@media(max-width: 768px){
-        .toggle {
+@media (max-width: 993px) {
+    .toggle {
         display: block;
         position: relative;
         width: 30px;
@@ -682,57 +680,57 @@ footer {
         width: 100%;
         margin: 5% 0;
     }
+}
+
+@media(max-width: 768px) {
     .logo_mobile>img {
         max-width: 72px;
         max-height: 72px;
     }
     /*MQ PRECIOS*/
-    .precios_section{
+    .precios_section {
         margin: 5%;
     }
-
-    .card_container_price{
+    .card_container_price {
         display: flex;
-
         flex-direction: column;
     }
-    
     .card_style_price_principal {
-        margin: 5% ;
+        margin: 5%;
     }
     /*MQ FOOTER*/
-    .footer_section_01{
+    .footer_section_01 {
         display: flex;
         flex-direction: column;
     }
-    .footer_section_logo{
-        width: 100%;
-        text-align: center;
-    }     
-    .footer_section_links{
+    .footer_section_logo {
         width: 100%;
         text-align: center;
     }
-    .footer_section_links > ul{
+    .footer_section_links {
+        width: 100%;
+        text-align: center;
+    }
+    .footer_section_links>ul {
         padding: 5%;
         text-decoration: none;
     }
-
-
-    .footer_section_02_links{
+    .footer_section_02_links {
         display: flex;
         flex-direction: column;
     }
-    .footer_section_02_links_sitemap{
+    .footer_section_02_links_sitemap {
         text-align: center;
         width: 100%;
     }
-    .footer_section_02_links_redes_sociales{
+    .footer_section_02_links_redes_sociales {
         width: 100%;
         text-align: center;
         margin: 1% 0;
     }
 }
+
+
 @media (min-width: 540px) {
     .banner_section_content {
         top: 15%;
