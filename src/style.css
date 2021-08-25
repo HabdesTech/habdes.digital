@@ -755,6 +755,8 @@ footer {
     .navbar_section_menu{
         border: 5px solid red;
         margin: 0 15% 0 0;
+        text-align: center;
+        justify-content: center;
     }
 }
 /* MQ PARA IPHONE 5/SE */
