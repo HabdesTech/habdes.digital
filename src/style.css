@@ -578,8 +578,11 @@ footer {
         padding: 3% 5% 1rem;
     }
 }
-@media (max-width: 993px) {
-    .toggle {
+
+
+
+@media(max-width: 768px){
+        .toggle {
         display: block;
         position: relative;
         width: 30px;
@@ -679,11 +682,6 @@ footer {
         width: 100%;
         margin: 5% 0;
     }
-
-}
-
-
-@media(max-width: 768px){
     .logo_mobile>img {
         max-width: 72px;
         max-height: 72px;
