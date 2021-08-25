@@ -608,7 +608,6 @@ footer {
         transition: 0.5s;
     }
     header, header.sticky {
-        justify-content: flex-end;
         /*Sirve para colocar el toggle al lado derecho del navbar*/
         align-items: center;
         /*Sirve para alinear vertialmente el toggle*/
@@ -631,16 +630,16 @@ footer {
         visibility: visible;
         opacity: 1;
         display: inline-block;
-        margin: 0 10%;
+        width: 100%;
     }
     header.active ul li {
         text-align: center;
-        margin: 0 5% 0 0;
     }
     header.active ul li a {
         color: var(--color-principal);
         display: inline-block;
         justify-content: center;
+        text-align: center;
     }
     .logo_principal {
         display: none;
@@ -655,9 +654,9 @@ footer {
     .navbar_section_btn {
         display: none;
     }
+    
     .navbar_section_menu{
-        width: 70%;
-        margin: auto;
+        width: 100%;
     }
     .navbar_section_menu_mobile {
         visibility: visible;
