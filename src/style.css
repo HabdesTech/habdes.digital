@@ -97,13 +97,12 @@
     margin: 1%;
     overflow: auto;
 }
-
-.card_style_01>img {
-    width: 100%;
-    height: auto;
-    padding: 1% 0 5% 0;
-    border-radius: 15px;
+.card_style_01_img {
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
 }
+
 
 .card_container {
     display: flex;
@@ -200,6 +199,7 @@ header {
     transition: 0.6s;
     z-index: 1000;
 }
+
 header.sticky {
     background: var(--color-principal);
 }
@@ -321,12 +321,22 @@ header>ul>li>a:hover {
     padding: 3% 0;
 }
 
+.ofrecemos_section_content {
+    display: flex;
+}
+
+.ofrecemos_section_img {
+    width: 60%;
+    padding: 4% 0 0 0;
+}
+
 .ofrecemos_section_img>img {
     width: 100%;
 }
 
 .ofrecemos_section_texto {
-    padding: 5% 0;
+    padding: 5%;
+    width: 40%;
 }
 
 .ofrecemos_section_texto>ul {
@@ -343,7 +353,10 @@ header>ul>li>a:hover {
 }
 
 .como_funciona_section_texto {
-    padding: 20% 0 0 0;
+    padding: 17% 0 0 0%;
+}
+.como_funciona_section_card_img{
+
 }
 
 /*-------------------------CIERRE_SECTION_02-------------------------*/
@@ -488,7 +501,7 @@ footer {
 }
 
 .footer_section_logo {
-    width: 40%;
+    width: 20%;
 }
 
 .footer_section_links {
@@ -551,6 +564,13 @@ footer {
 .footer_section_02_copyright {
     color: var(--color-alterno);
     text-align: center;
+}
+
+.footer_section_logo>img {
+    width: 160px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 
 /*-------------------------CIERRE_FOOTER-------------------------*/
@@ -663,8 +683,7 @@ footer {
     .navbar_section_btn {
         display: none;
     }
-    
-    .navbar_section_menu{
+    .navbar_section_menu {
         width: 100%;
     }
     .navbar_section_menu_mobile {
@@ -697,6 +716,21 @@ footer {
         max-width: 72px;
         max-height: 72px;
     }
+    /*MQ OFRECEMOS*/
+    .ofrecemos_section_content {
+        flex-direction: column;
+    }
+    .ofrecemos_section_img {
+        width: 100%;
+    }
+    .ofrecemos_section_texto {
+        width: 100%;
+    }
+    /*MQ COMO FUNCIONA*/
+    .como_funciona_section{
+        margin: 20% 15%;
+    }
+
     /*MQ PRECIOS*/
     .precios_section {
         margin: 5%;
@@ -763,7 +797,7 @@ footer {
     .banner_section_content {
         top: 20%;
     }
-    .navbar_section_menu{
+    .navbar_section_menu {
         width: 70%;
     }
 }
