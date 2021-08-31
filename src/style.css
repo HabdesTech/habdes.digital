@@ -39,8 +39,10 @@
     padding: 8px 0;
     width: 120px;
     text-align: center;
-    text-decoration: none;
     border-radius: 10px;
+}
+.btn_principal_alterno > a {
+    text-decoration: none;
 }
 
 .btn_secundario {
@@ -54,6 +56,10 @@
     border-radius: 10px;
 }
 
+.btn_secundario>a {
+    text-decoration: none;
+}
+
 .btn_secundario_alterno {
     color: var(--color-alterno);
     background: var(--color-principal);
@@ -63,6 +69,16 @@
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn_secundario_alterno>a {
+    text-decoration: none;
+    color: var(--color-alterno);
+}
+
+.btn_secundario_alterno>a:hover {
+    color: var(--color-alterno);
 }
 
 .btn_card_precios {
@@ -75,6 +91,16 @@
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
+    overflow: auto;
+}
+
+.btn_card_precios>a {
+    text-decoration: none;
+    color: var(--color-alterno);
+    padding: 19px 163px;
+}
+.btn_card_precios > a:hover {
+    color: var(--color-alterno);
 }
 
 .btn_card_precios_alterno {
@@ -84,9 +110,14 @@
     padding: 8px 0;
     width: 100%;
     height: 60px;
-    text-align: center;
     text-decoration: none;
     border-radius: 10px;
+    overflow: auto;
+}
+
+.btn_card_precios_alterno>a {
+    text-decoration: none;
+    padding: 19px 132px;
 }
 
 .card_style_01 {
@@ -97,12 +128,12 @@
     margin: 1%;
     overflow: auto;
 }
+
 .card_style_01_img {
     display: flex;
     justify-content: center;
     padding: 5% 0;
 }
-
 
 .card_container {
     display: flex;
@@ -296,6 +327,10 @@ header>ul>li>a:hover {
     padding: 15% 0;
 }
 
+.banner_section_content_text>h1 {
+    font-size: 60px;
+}
+
 .banner_section_content_img {
     padding: 5% 0;
     z-index: 1;
@@ -313,7 +348,8 @@ header>ul>li>a:hover {
 /*-------------------------SECTION_01-------------------------*/
 
 .ofrecemos_section {
-    margin: 5% 15%;
+    margin: 0 15%;
+    overflow: auto;
 }
 
 .ofrecemos_section>h1 {
@@ -430,8 +466,8 @@ header>ul>li>a:hover {
 .temas_section_texto>p {
     color: var(--color-alterno);
     text-align: center;
-    font-weight: 100;
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: lighter;
 }
 
 .temas_section_img {
@@ -508,6 +544,10 @@ footer {
 .footer_section_links>ul {
     list-style: none;
     padding: 0;
+}
+
+.footer_section_links>ul>li>a {
+    font-weight: lighter;
 }
 
 .footer_section_02 {
@@ -724,10 +764,9 @@ footer {
         width: 100%;
     }
     /*MQ COMO FUNCIONA*/
-    .como_funciona_section{
+    .como_funciona_section {
         margin: 20% 15%;
     }
-
     /*MQ PRECIOS*/
     .precios_section {
         margin: 5%;
@@ -778,6 +817,13 @@ footer {
 }
 
 @media(max-width: 425px) {
+    .ofrecemos_section {
+        margin: 15% 0;
+    }
+    .temas_section {
+        margin: 15% 0;
+        padding: 10%;
+    }
     .footer_section_02_links_sitemap {
         font-size: 14px;
         text-align: center;
