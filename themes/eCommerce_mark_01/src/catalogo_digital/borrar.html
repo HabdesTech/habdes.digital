@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container py-5 text-center bg-warning">
+        <button class="btn btn-info">Aumentar</button>
+        <button class="btn btn-danger">Disminuir</button>
+        <h4 class="mt-5">Contador: <span id="resultado" min="1">1</span></h4>
+    </div>
+
+    <template id="template-contador"> </template>
+
+    <script>
+        const resultado = document.getElementById("resultado");
+        const btnAgregar = document.querySelector(".btn-info");
+        const btnDisminuir = document.querySelector(".btn-danger")
+        let contador = 1;
+
+        btnAgregar.addEventListener("click", () => {
+            console.log("diste click");
+            contador++;
+            pintarContador();
+        });
+        btnDisminuir.addEventListener("click", () => {
+            contador--;
+            pintarContador()
+        })
+        pintarContador = () => {
+            if(contador >= 1 ){
+                resultado.textContent = contador
+            } else {
+                contador = 1
+            }}
+
+
+    </script>
+</body>
+
+</html>
