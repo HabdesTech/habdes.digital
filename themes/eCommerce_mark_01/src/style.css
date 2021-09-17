@@ -429,12 +429,11 @@
 }
 .product_container_img{
     width: 60%;
-    border: 2px solid blue;
 }
 .product_container_content{
     width: 40%;
     padding: 6% 2.5% 0;
-    border: 2px solid blue;
+    border-radius: 15px;
     background: #f8f9fa;
 }
 .product_container_img > img{
@@ -655,11 +654,9 @@ font-weight: bold;
     }
     .product_container_img{
         width: 100%;
-        border: 2px solid blue;
     }
     .product_container_content{
         width: 100%;
-        border: 2px solid blue;
         background: #f8f9fa;
     }
 }
@@ -672,6 +669,9 @@ font-weight: bold;
 }
 
 @media(max-width: 425px) {
+    .product_container_img > img{
+        max-height: 500px;
+    }
     .productos_section_cards_container{
         margin: 0 1%;
     }
