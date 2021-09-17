@@ -12,7 +12,7 @@ reducir.addEventListener("click", () => {
     cantidad--
     modificarContador()
 })
-modificarContador = () => {    
+modificarContador = () => {
     //Agregué una condicional IF para poder poner un limite al contador y que no se vuelva negativo
     if (cantidad >= 1) {
         cantidadProducto.textContent = cantidad
@@ -45,13 +45,14 @@ var precioDelivery = "";
 //metodos_de_pago
 const metodoPago = document.getElementById("metodoPago")
 var formaPago;
-var precioTotal ;
-
+var precioTotal;
+//otros
+const btnCerrarFormulario = document.getElementById("btnCerrarFormulario")
 
 
 btnEnviar.addEventListener("click", () => {
     //Con esta condicional se puede determinar que distrito eligió el usuario y determinar el precio de envio
-    if (metodoEntrega.value == "Recojo en local" ) {
+    if (metodoEntrega.value == "Recojo en local") {
         precioDelivery = 0
     } else {
         for (var i = 0; i < distritosCercanos.length; i++) {
@@ -59,30 +60,39 @@ btnEnviar.addEventListener("click", () => {
                 precioDelivery = 5
             } else if (distritoUsuario.value == distritosMedianos[i]) {
                 precioDelivery = 10
-            } else if (distritoUsuario.value == distritosLejanos[i]){
+            } else if (distritoUsuario.value == distritosLejanos[i]) {
                 precioDelivery = 15
             } else {
-                 "No aplica envío"
+                "No aplica envío"
             }
         }
     }
     //Con esta condicional se puede determinar el método de pago y mostrar la información solicitada
-    if(metodoPago.value == "Transferencia interbancaria"){
+    if (metodoPago.value == "Transferencia interbancaria") {
         formaPago = "Transferencia bancaria" + " " + 2003151735911
-    } else if (metodoPago.value == "Yape"){
+    } else if (metodoPago.value == "Yape") {
         formaPago = "Yapea" + " -> " + 993722873
-    } else if (metodoPago.value == "Plin"){
+    } else if (metodoPago.value == "Plin") {
         formaPago = "Plinea" + " -> " + 993722873
-    } else if (metodoPago.value == "tunki"){
+    } else if (metodoPago.value == "tunki") {
         formaPago = "Tunkea" + " -> " + 993722873
     } else {
         "No aplica"
     }
     //Con esta operación realizamos la operación aritmética para calcular el precio total del pedido. Se usa el "parseInt" para convertir los datos en números
-    precioTotal = (parseInt(precioProducto.textContent) + precioDelivery) * parseInt(cantidadProducto.textContent);
+    precioTotal = (parseInt(precioProducto.textContent) * parseInt(cantidadProducto.textContent) + precioDelivery);
 
-    location.href = `https://api.whatsapp.com/send/?phone=51960995232&text=%F0%9F%91%8B%+Hola%21+Acabo+de+realizar+el+siguiente+pedido+en+https://digital.habdes.pe/%3A%0A%0A%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BBDATOS+DEL+CLIENTE%3A%0AMi+nombre+es%3A+${nombreUsuario.value}%0AMi+DNI+es%3A+${dniUsuario.value}%0AMi+Teléfono+es%3A+${telefonoUsuario.value}%0AMi+Distrito+es%3A+${distritoUsuario.value}%0AMi+dirección+en%3A+${direccionUsuario.value}%0AMi+correo+electrónico+es%3A+${correoUsuario.value}%0AMétodo+de+entrega%3A+${metodoEntrega.value}%0A%0A%F0%9F%93%A6+DETALLE+DEL+PEDIDO%3A%0ALink+del+producto%3A+${urlProducto}%0ANombre+del+producto%3A+${nombreProducto.textContent}%0ACantidad%3A+${cantidadProducto.textContent}%0ASubtotal%3A+S/.+${precioProducto.textContent}%0AEnvío%3A+S/.+${precioDelivery}%0ATotal%3A+S/.+${precioTotal}%0A%0A%F0%9F%92%B3+MÉTODO+DE+PAGO%3A%0AMétodo+de+pago+solicitado%3A+${formaPago}`
+
+    window.open(`https://api.whatsapp.com/send/?phone=51960995232&text=%F0%9F%91%8B%+Hola%21+Acabo+de+realizar+el+siguiente+pedido+en+https://digital.habdes.pe/%3A%0A%0A%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BBDATOS+DEL+CLIENTE%3A%0AMi+nombre+es%3A+${nombreUsuario.value}%0AMi+DNI+es%3A+${dniUsuario.value}%0AMi+Teléfono+es%3A+${telefonoUsuario.value}%0AMi+Distrito+es%3A+${distritoUsuario.value}%0AMi+dirección+en%3A+${direccionUsuario.value}%0AMi+correo+electrónico+es%3A+${correoUsuario.value}%0AMétodo+de+entrega%3A+${metodoEntrega.value}%0A%0A%F0%9F%93%A6+DETALLE+DEL+PEDIDO%3A%0ALink+del+producto%3A+${urlProducto}%0ANombre+del+producto%3A+${nombreProducto.textContent}%0ACantidad%3A+${cantidadProducto.textContent}%0ASubtotal%3A+S/.+${precioProducto.textContent}%0AEnvío%3A+S/.+${precioDelivery}%0ATotal%3A+S/.+${precioTotal}%0A%0A%F0%9F%92%B3+MÉTODO+DE+PAGO%3A%0AMétodo+de+pago+solicitado%3A+${formaPago}`, '_blank')
+    cierreVentana()
 })
+//Esta función cerrará la ventana del formulario
+function cierreVentana() {
+    btnCerrarFormulario.click()
+    swal("Tu pedido se generó exitosamente", "Gracias por comprar con nosotros", "success");
+}
+
+
 
 // %F0%9F%91%8B%+Hola%21+Acabo+de+realizar+el+siguiente+pedido+en+https://digital.habdes.pe/%3A%0A%0A
 // DATOS+DEL+CLIENTE%3A%0A
@@ -102,7 +112,6 @@ btnEnviar.addEventListener("click", () => {
 // Total%3A+S/.+${precioTotal}%0A%0A
 // MÉTODO+DE+PAGO%3A%0A
 // Método+de+pago+solicitado%3A+${formaPago}
-
 
 
 
