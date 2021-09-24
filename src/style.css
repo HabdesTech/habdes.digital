@@ -97,7 +97,7 @@
 .btn_card_precios>a {
     text-decoration: none;
     color: var(--color-alterno);
-    padding: 19px 163px;
+    padding: 19px 30%;
 }
 .btn_card_precios > a:hover {
     color: var(--color-alterno);
@@ -117,7 +117,7 @@
 
 .btn_card_precios_alterno>a {
     text-decoration: none;
-    padding: 19px 132px;
+    padding: 19px 30%;
 }
 
 .card_style_01 {
@@ -856,4 +856,5 @@ footer {
     .banner_section_content {
         top: 15%;
     }
+
 }
